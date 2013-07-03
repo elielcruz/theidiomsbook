@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/lbl_settings_cache" >
+        <Preference
+            android:key="delete-history-cache"
+            android:summary="@string/msg_settings_delete_history_cache"
+            android:title="@string/lbl_delete_history_cache" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/lbl_settings_quiz" >
+        <EditTextPreference
+            android:defaultValue="11"
+            android:dialogTitle="@string/lbl_settings_dlg_num_questions"
+            android:key="settings_num_questions"
+            android:summary="@string/msg_settings_num_questions"
+            android:title="@string/lbl_settings_num_questions" />
+        <EditTextPreference
+            android:defaultValue="5"
+            android:dialogTitle="@string/lbl_settings_dlg_num_responses"
+            android:key="settings_num_responses"
+            android:summary="@string/msg_settings_num_responses"
+            android:title="@string/lbl_settings_num_responses" />
+
+        <ListPreference
+            android:defaultValue="english"
+            android:entries="@array/languages"
+            android:entryValues="@array/languages_values"
+            android:key="settings_quiz_language"
+            android:summary="@string/msg_settings_quiz_language"
+            android:title="@string/lbl_settings_quiz_language" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

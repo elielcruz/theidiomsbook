@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityScreen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/MainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mainMenuTitle"
+            style="@style/ActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="@string/lbl_main_menu_title"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:minWidth="500dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/BtnSpanish"
+                style="@style/MainButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/MainButtonTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_spanish" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/MainButtonDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_desc_spanish" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BtnEnglish"
+                style="@style/MainButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/MainButtonTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_english" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/MainButtonDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_desc_english" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BtnQuiz"
+                style="@style/MainButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/MainButtonTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_quiz" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/MainButtonDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_desc_quiz" />
+            </LinearLayout>
+            <!--
+            <LinearLayout
+                android:id="@+id/BtnExit"
+                style="@style/MainButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/MainButtonTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_exit" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/MainButtonDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_desc_exit" />
+            </LinearLayout>
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

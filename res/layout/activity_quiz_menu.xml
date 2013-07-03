@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/ActivityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_quiz_menu"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/ApplicationFormTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_number_of_questions" />
+
+        <EditText
+            android:id="@+id/num_questions"
+            style="@style/TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:inputType="number"
+            android:selectAllOnFocus="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/ApplicationFormTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_number_of_responses" />
+
+        <EditText
+            android:id="@+id/num_responses"
+            style="@style/TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:inputType="number"
+            android:selectAllOnFocus="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/ApplicationFormTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_idioms_language" />
+
+        <RadioGroup
+            android:id="@+id/quiz_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbEnglish"
+                android:button="@drawable/radio"
+                android:checked="true"
+                android:height="50dp"
+                android:text="@string/lbl_english"
+                android:width="100dp" />
+
+            <RadioButton
+                android:id="@+id/rbSpanish"
+                android:button="@drawable/radio"
+                android:height="50dp"
+                android:text="@string/lbl_spanish"
+                android:width="100dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/BtnStartQuiz"
+            style="@style/ApplicationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_start_quiz" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

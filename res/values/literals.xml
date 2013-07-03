@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ltr_num_questions">num_questions</string>
+    <string name="ltr_num_responses">num_responses</string>
+    <string name="ltr_quiz_language">quiz_language</string>
+    <string name="ltr_pending_questions">pending_questions</string>
+    <string name="ltr_english">english</string>
+    <string name="ltr_spanish">spanish</string>
+    <string name="ltr_sharp">#</string>
+</resources>
