@@ -55,7 +55,7 @@
     <string name="msg_num_questions_bad_number">Número de preguntas debe ser un número.</string>
     <string name="msg_num_responses_bad_number">Número de respuestas debe ser un número.</string> 
     <string name="msg_exit_quiz">No se guardará el estado actual.</string>
-    <string name="msg_dialog_installing_database">Sólo verá este mensaje la primera vez que acceda a la aplicación.</string>
+    <string name="msg_dialog_installing_database">Sólo verá este mensaje la primera vez que acceda a la aplicación o si hemos hecho alguna actualización.</string>
     <string name="msg_database_installation_completed">Base de datos instalada correctamente.</string>
     <string name="msg_database_installation_error">Hubo un error al instalar la base de datos. Por favor, vuelva a intentarlo.</string>
     <string name="msg_no_additional_information">No existe información adicional actualmente para esta expresión.</string>

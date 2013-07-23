@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockActivity;
@@ -45,7 +46,7 @@ public class IdiomDescriptionActivity extends SherlockActivity {
 		idiomPager = (ViewPager) findViewById(R.id.idiomPager);
 		idiomPager.setAdapter(pagerAdapter);
 		idiomPager.setCurrentItem(idiomId - 1); // Pager is zero-based. IdiomsId
-																						// start in 1.
+		                                        // start in 1.
 	}
 
 	@Override
@@ -118,16 +119,18 @@ public class IdiomDescriptionActivity extends SherlockActivity {
 		@Override
 		public Object instantiateItem(ViewGroup collection, int position) {
 			LayoutInflater inflater = LayoutInflater.from(context);
-			LinearLayout idiomScreen = (LinearLayout) inflater.inflate(
-			    R.layout.activity_idiom_description, null);
+			ScrollView idiomScreen = (ScrollView) inflater.inflate(R.layout.activity_idiom_description,
+			    null);
 
 			setIdiomId(position + 1);
 			getIdiomData();
 
-			TextView tvSourceIdiom = (TextView) idiomScreen.findViewById(R.id.sourceIdiom);
-			TextView tvTargetIdiom = (TextView) idiomScreen.findViewById(R.id.targetIdiom);
-			TextView tvDescription = (TextView) idiomScreen.findViewById(R.id.idiomDescription);
-			TextView tvExamples = (TextView) idiomScreen.findViewById(R.id.idiomExamples);
+			LinearLayout detailsScreen = (LinearLayout) idiomScreen
+			    .findViewById(R.id.idiomDescriptionScreen);
+			TextView tvSourceIdiom = (TextView) detailsScreen.findViewById(R.id.sourceIdiom);
+			TextView tvTargetIdiom = (TextView) detailsScreen.findViewById(R.id.targetIdiom);
+			TextView tvDescription = (TextView) detailsScreen.findViewById(R.id.idiomDescription);
+			TextView tvExamples = (TextView) detailsScreen.findViewById(R.id.idiomExamples);
 
 			if (spanishDescription == null) {
 				spanishDescription = getResources().getString(R.string.msg_no_additional_information);

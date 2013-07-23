@@ -3,8 +3,10 @@ package com.theidiomsbook;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.View;
 import android.widget.AdapterView;
@@ -51,8 +53,13 @@ public class IdiomsListActivity extends SherlockListActivity {
 				intent.putExtra("source-language", sourceLanguage);
 				intent.putExtra("target-language", targetLanguage);
 				startActivity(intent);
-				Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.msg_toast_slide_screen), Toast.LENGTH_LONG);
-				toast.show();
+				SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+				int toastCounter = sharedPref.getInt("toast-counter", 5);
+				if (toastCounter > 0) {
+					Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.msg_toast_slide_screen), Toast.LENGTH_LONG);
+					toast.show();
+					sharedPref.edit().putInt("toast-counter", --toastCounter).commit();
+				}
 			}
 
 		});

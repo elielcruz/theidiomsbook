@@ -55,7 +55,7 @@
     <string name="msg_num_questions_bad_number">Number of questions must be a number.</string>
     <string name="msg_num_responses_bad_number">Number of responses must be a number.</string>    
     <string name="msg_exit_quiz">You will lose your progress.</string>
-    <string name="msg_dialog_installing_database">You only will see this message the first time you open the App.</string>
+    <string name="msg_dialog_installing_database">You only will see this message the first time you open the App or if we have done an update.</string>
     <string name="msg_database_installation_completed">Database installed.</string>
     <string name="msg_database_installation_error">Database installation error. Please try again.</string>
     <string name="msg_no_additional_information">There is no additional information for this idiom.</string>

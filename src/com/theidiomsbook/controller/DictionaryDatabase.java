@@ -40,7 +40,7 @@ public class DictionaryDatabase {
 	private static final String TAG = "DictionaryDatabase";
 	private static final String DATABASE_NAME = "tib";
 	private static final String DICTIONARY_TABLE = "dictionary";
-	private static final int DATABASE_VERSION = 3;
+	private static final int DATABASE_VERSION = 4;
 	private static DictionaryOpenHelper mDatabaseOpenHelper;
 	private static SQLiteDatabase mDatabase;
 	private static int NUM_IDIOMS = 0;

@@ -932,8 +932,8 @@ containing a value of this type.
         public static final int BtnSpanish=0x7f06003e;
         public static final int BtnStartQuiz=0x7f06004f;
         public static final int CurrentIdiom=0x7f060048;
-        public static final int ExamplesTag=0x7f060037;
-        public static final int ListTitle=0x7f06003a;
+        public static final int ExamplesTag=0x7f060038;
+        public static final int ListTitle=0x7f06003b;
         public static final int ListTitle_search=0x7f060053;
         public static final int MainScreen=0x7f06003c;
         public static final int ResultsSummary=0x7f060052;
@@ -976,17 +976,18 @@ containing a value of this type.
         public static final int abs__textButton=0x7f060013;
         public static final int abs__title=0x7f06001b;
         public static final int abs__up=0x7f06000b;
-        public static final int action_search=0x7f06005f;
+        public static final int action_search=0x7f060060;
         public static final int action_settings=0x7f06005e;
-        public static final int activityScreen=0x7f06003b;
+        public static final int action_share=0x7f06005f;
+        public static final int activityScreen=0x7f060032;
         public static final int currentQuestionHeader=0x7f060047;
         public static final int disableHome=0x7f060009;
         public static final int edit_query=0x7f060026;
         public static final int homeAsUp=0x7f060006;
-        public static final int idiomDescription=0x7f060036;
-        public static final int idiomDescriptionScreen=0x7f060032;
-        public static final int idiomExamples=0x7f060038;
-        public static final int idiomPager=0x7f060039;
+        public static final int idiomDescription=0x7f060037;
+        public static final int idiomDescriptionScreen=0x7f060033;
+        public static final int idiomExamples=0x7f060039;
+        public static final int idiomPager=0x7f06003a;
         public static final int listMode=0x7f060002;
         public static final int mainMenuTitle=0x7f06003d;
         public static final int normal=0x7f060001;
@@ -1010,10 +1011,10 @@ containing a value of this type.
         public static final int showCustom=0x7f060008;
         public static final int showHome=0x7f060005;
         public static final int showTitle=0x7f060007;
-        public static final int sourceIdiom=0x7f060033;
+        public static final int sourceIdiom=0x7f060034;
         public static final int tabMode=0x7f060003;
-        public static final int tag_description=0x7f060035;
-        public static final int targetIdiom=0x7f060034;
+        public static final int tag_description=0x7f060036;
+        public static final int targetIdiom=0x7f060035;
         public static final int textView1=0x7f06003f;
         public static final int textView2=0x7f060040;
         public static final int textView3=0x7f060042;
@@ -1065,7 +1066,8 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int actionbar=0x7f0e0000;
-        public static final int actionbar_search=0x7f0e0001;
+        public static final int actionbar_quiz_result=0x7f0e0001;
+        public static final int actionbar_search=0x7f0e0002;
     }
     public static final class raw {
         public static final int tib=0x7f050000;
