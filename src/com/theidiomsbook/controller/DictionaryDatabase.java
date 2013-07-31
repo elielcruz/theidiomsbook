@@ -65,8 +65,16 @@ public class DictionaryDatabase {
 	}
 
 	public Cursor findIdioms(String language, String expression) {
+		expression = expression.trim().toLowerCase(Locale.getDefault());
+		
+//		expression = expression.replaceAll("a|á", "[aá]");
+//		expression = expression.replaceAll("e|é", "[eé]");
+//		expression = expression.replaceAll("i|í", "[ií]");
+//		expression = expression.replaceAll("o|ó", "[oó]");
+//		expression = expression.replaceAll("u|ú|ü", "[uúü]");
+		
 		String query = "SELECT _id, spanish, english FROM dictionary WHERE " + language + " like '%"
-		    + expression.trim().toLowerCase(Locale.getDefault()) + "%'";
+		    + expression  + "%'";
 		return mDatabase.rawQuery(query, null);
 	}
 

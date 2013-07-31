@@ -1,76 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_vertical|center_horizontal"
-    android:background="@color/white"
-    android:minWidth="500dp"
-    android:orientation="vertical"
-    android:padding="10dp" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
 
     <LinearLayout
-        style="@style/IdiomDescriptionItem"
+        android:id="@+id/idiomDescriptionScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/white"
+        android:minWidth="500dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
 
-        <TextView
-            android:id="@+id/sourceIdiom"
-            style="@style/IdiomDescriptionItem_source"
+        <LinearLayout
+            style="@style/IdiomDescriptionItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textIsSelectable="true" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sourceIdiom"
+                style="@style/IdiomDescriptionItem_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/targetIdiom"
+                style="@style/IdiomDescriptionItem_target"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/targetIdiom"
-            style="@style/IdiomDescriptionItem_target"
+            android:id="@+id/tag_description"
+            style="@style/ApplicationTag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textIsSelectable="true" />
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/lbl_description" />
 
-    <TextView
-        android:id="@+id/tag_description"
-        style="@style/ApplicationTag"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/lbl_description" />
-
-    <LinearLayout
-        style="@style/IdiomDescriptionItem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/idiomDescription"
-            style="@style/IdiomDescriptionItem_description"
+        <LinearLayout
+            style="@style/IdiomDescriptionItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textIsSelectable="true" />
-    </LinearLayout>
+            android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/ExamplesTag"
-        style="@style/ApplicationTag"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_examples" />
-
-    <LinearLayout
-        style="@style/IdiomDescriptionItem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
+            <TextView
+                android:id="@+id/idiomDescription"
+                style="@style/IdiomDescriptionItem_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/idiomExamples"
-            style="@style/IdiomDescriptionItem_examples"
-            android:layout_width="wrap_content"
+            android:id="@+id/ExamplesTag"
+            style="@style/ApplicationTag"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textIsSelectable="true" />
+            android:text="@string/lbl_examples" />
+
+        <LinearLayout
+            style="@style/IdiomDescriptionItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/idiomExamples"
+                style="@style/IdiomDescriptionItem_examples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true" />
+        </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
