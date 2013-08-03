@@ -19,8 +19,9 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.theidiomsbook.Quiz.Response;
 import com.theidiomsbook.controller.DictionaryDatabase;
+import com.theidiomsbook.model.Quiz;
+import com.theidiomsbook.model.Response;
 
 public class QuizQuestionActivity extends SherlockActivity {
 	private Quiz quiz;

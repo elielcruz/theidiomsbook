@@ -17,6 +17,7 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.SearchView;
 import com.theidiomsbook.controller.DictionaryDatabase;
+import com.theidiomsbook.controller.SearchSuggestionsProvider;
 
 public class SearchableActivity extends SherlockListActivity {
 	private static String sourceLanguage, targetLanguage;

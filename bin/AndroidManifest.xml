@@ -58,8 +58,8 @@
             android:value=".SearchableActivity" />
 
         <provider
-            android:name=".SearchSuggestionsProvider"
-            android:authorities="com.theidiomsbook.SearchSuggestionsProvider"
+            android:name="com.theidiomsbook.controller.SearchSuggestionsProvider"
+            android:authorities="com.theidiomsbook.controller.SearchSuggestionsProvider"
             android:exported="false" />
     </application>
 

@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.theidiomsbook.controller.SearchSuggestionsProvider;
 
 public class SettingsActivity extends SherlockPreferenceActivity {
 	@Override

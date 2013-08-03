@@ -14,6 +14,7 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.theidiomsbook.libraries.UIHelper;
+import com.theidiomsbook.model.Quiz;
 
 public class QuizMenuActivity extends SherlockActivity {
 	private Quiz quiz;

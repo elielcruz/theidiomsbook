@@ -59,7 +59,7 @@
 
         <provider
             android:name=".SearchSuggestionsProvider"
-            android:authorities="com.theidiomsbook.SearchSuggestionsProvider"
+            android:authorities="com.theidiomsbook.controller.SearchSuggestionsProvider"
             android:exported="false" />
     </application>
 

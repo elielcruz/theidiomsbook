@@ -1,6 +1,7 @@
 package com.theidiomsbook;
 
 import java.util.Iterator;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +13,8 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.theidiomsbook.Quiz.Response;
+import com.theidiomsbook.model.Quiz;
+import com.theidiomsbook.model.Response;
 
 public class QuizResultsActivity extends SherlockActivity {
 	private Quiz quiz;
