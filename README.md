@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sat Mar 28 2015 12:22:29 GMT+0000 (UTC) -->
-<html data-wf-site="550ec464546198ec34eab629" data-wf-page="550ec464546198ec34eab62a">
+<html>
 <head>
   <meta charset="utf-8">
   <title>The Idioms Book</title>
@@ -27,7 +25,7 @@
   <div class="w-section header">
     <div class="w-nav menu" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
       <div class="w-container">
-        <a class="w-nav-brand" href="#"><img class="logo" src="images/TIB_128x128.png" width="64" alt="550ec50b9c6612da49cb9fd2_TIB_128x128.png">
+        <a class="w-nav-brand" href="#"><img class="logo" src="https://theidiomsbook.elielcruzlopez.com/images/TIB_128x128.png" width="64" alt="550ec50b9c6612da49cb9fd2_TIB_128x128.png">
           <div class="logo-title">The Idioms Book</div>
         </a>
         <nav class="w-nav-menu nav-menu" role="navigation"><a class="menu-link" href="#contact">Contact</a><a class="menu-link" href="https://play.google.com/store/apps/details?id=com.theidiomsbook" target="_blank">Download</a>
